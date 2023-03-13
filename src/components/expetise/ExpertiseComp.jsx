@@ -1,0 +1,46 @@
+import React from "react";
+
+const ExpertiseComp = () => {
+  const data = [
+    {
+      id: 1,
+      imgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/e/ed/Leonardo_%28Teenage_Mutant_Ninja_Turtles%29.jpg",
+      title: "Consultancy",
+    },
+    {
+      id: 2,
+      imgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/e/ed/Leonardo_%28Teenage_Mutant_Ninja_Turtles%29.jpg",
+      title: "Product Development",
+    },
+    {
+      id: 3,
+      imgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/e/ed/Leonardo_%28Teenage_Mutant_Ninja_Turtles%29.jpg",
+      title: "Training",
+    },
+  ];
+  const card = data.map((datas) => {
+    return (
+      <div className="col-span-3  m-3 md:col-span-1 " key={datas.id}>
+        <div class="max-w-sm   bg-white border border-blue-700 rounded-lg shadow-sm-light shadow-green-300 text-gray-900  hover:text-white  hover:scale-none hover:bg-[#272F56]  md:hover:scale-[1.15]">
+          <img
+            class=" rounded-t-lg w-full h-56"
+            src={datas.imgUrl}
+            alt="cardimage"
+          />
+          <div class="p-5 z-40">
+            <h5 class="mb-2 text-xl font-bold font-serif tracking-tight leading-none ">
+              {datas.title}
+            </h5>
+          </div>
+        </div>
+      </div>
+    );
+  });
+
+  return <div className=" grid grid-cols-3 gap-32 m-3">{card}</div>;
+};
+
+export default ExpertiseComp;
