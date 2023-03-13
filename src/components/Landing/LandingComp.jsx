@@ -6,9 +6,9 @@ import ExpertiseComp from "../expetise/ExpertiseComp";
 import Carousels from "../Featured/Carousel";
 function LandingComp() {
   return (
-    <div className="flex flex-col items-center justify-center w-[100vw] h-[100vh]">
+    <div className="flex flex-col items-center justify-center  ">
       <NavbarComp />
-      <Carousels/>
+      <Carousels />
       <ExpertiseComp/>
       <Testimonials/>
       <NewsLetter/>

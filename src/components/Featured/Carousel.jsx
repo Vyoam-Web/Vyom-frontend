@@ -47,10 +47,11 @@ const Carousels = () => {
   };
 
   return (
-    <div className='max-w-full h-80 md:h-[40rem] w-full m-auto py-10 relative group'>
+
+    <div className='max-w-full h-80 md:h-[40rem] w-full m-auto mt-1 py-10 relative group'>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
+        className='w-full h-full rounded-md md:rounded-2xl bg-center bg-cover duration-500'
       ></div>
       {/* Left Arrow */}
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-[#272F56] text-white cursor-pointer'>
@@ -60,10 +61,10 @@ const Carousels = () => {
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-[#272F56] text-white cursor-pointer'>
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
-      <button className="hidden group-hover:block absolute top[70%] md:top-[85%] translate-x-[6rem] md:translate-x-[35vw] translate-y-[-100%] md:translate-y-[-50%] text-center text-sm outline-none px-4 bg-[#272F56] text-white cursor-pointer">
+      <button className="hidden group-hover:block absolute top[70%] md:top-[85%] translate-x-[35vw] md:translate-x-[45vw] translate-y-[-100%] md:translate-y-[-50%] text-center text-sm outline-none p-2 rounded-md px-4 bg-[#272F56] text-white cursor-pointer">
          See More
       </button>
-      <div className=" hidden md:block font-bold   absolute top-[50%]  md:translate-x-[15vw]  translate-y-[-50%] text-center text-2xl outline-none px-4 bg-blend-saturation text-white cursor-pointer justify-center">
+      <div className=" hidden md:block font-bold   absolute top-[50%]  md:translate-x-[25vw]  translate-y-[-50%] text-center text-2xl outline-none px-4 bg-blend-color-burn text-white cursor-pointer justify-center">
         <p className=" w-[50vw]">{slides[currentIndex].quote}</p> 
       </div>
       

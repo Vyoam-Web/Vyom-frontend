@@ -29,7 +29,7 @@ const ExpertiseComp = () => {
             src={datas.imgUrl}
             alt="cardimage"
           />
-          <div class=" p-5 z-40">
+          <div class=" p-5 text-center z-40">
             <h5 class="mb-2 text-xl font-bold font-serif tracking-tight leading-none ">
               {datas.title}
             </h5>
