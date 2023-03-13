@@ -1,4 +1,5 @@
 import React from "react";
+import Arrow from "../../assets/send-svgrepo-com.svg";
 
 const NewsLetter = () => {
   return (
@@ -12,7 +13,9 @@ const NewsLetter = () => {
           type="email"
           placeholder="Enter your E-mail"
         />
-        <button className="px-7 py-[0.9rem] bg-[#272F56]">press</button>
+        <button className="px-7 py-[0.9rem] bg-[#272F56]">
+          <img className="h-[1.8rem] scale-[150%]" src={Arrow} alt="" />
+        </button>
       </div>
     </section>
   );
