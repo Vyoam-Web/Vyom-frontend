@@ -3,7 +3,7 @@ import Arrow from "../../assets/send-svgrepo-com.svg";
 
 const NewsLetter = () => {
   return (
-    <section className="bg-gray-50 text-xl text-black w-full text-center h-auto border-t-4 mx-10 border-black flex flex-col items-center justify-start py-5  ">
+    <section className="bg-gray-50 text-xl text-black w-full text-center h-auto border-t-4 mx-10 border-black flex flex-col items-center justify-start py-5 my-40 ">
       <h1 className="text-5xl font-bold py-10">
         Never miss important updates!{" "}
       </h1>

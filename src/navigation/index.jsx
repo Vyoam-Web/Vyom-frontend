@@ -5,7 +5,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import LandingComp from "../components/Landing/LandingComp";
+import LandingComp from "../components/Landing/Landing";
 
 
 function Navigation() {
