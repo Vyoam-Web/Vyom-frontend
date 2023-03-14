@@ -4,19 +4,19 @@ const ExpertiseComp = () => {
   const data = [
     {
       id: 1,
-      imgUrl:"./woman-to-consult-svgrepo-com.svg",
+      imgUrl: "./woman-to-consult-svgrepo-com.svg",
       title: "Consultancy",
     },
     {
       id: 2,
-      imgUrl:"./Coding.svg",
-        
+      imgUrl: "./Coding.svg",
+
       title: "Product Development",
     },
     {
       id: 3,
-      imgUrl:"./22_Video Player.svg",
-        
+      imgUrl: "./22_Video Player.svg",
+
       title: "Training",
     },
   ];
@@ -39,7 +39,10 @@ const ExpertiseComp = () => {
     );
   });
 
-  return <div className=" grid grid-cols-3 gap-5 md:gap-32  m-3">{card}</div>;
+  return (<>
+    <h1 className="font-bold text-3xl sm:text-5xl pb-5">Our Expertise</h1>
+    <div className=" grid grid-cols-3 gap-5 md:gap-32  m-3">{card}</div></>
+  );
 };
 
 export default ExpertiseComp;
